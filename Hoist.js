@@ -49,12 +49,13 @@ function print(){
 console.log(brendan);
 
 //How the Interpreter see it
-var brendan;
-brendan = 'super cool';
 function print(){
     brendan = 'only okay';
     console.log(brendan);
 }
+var brendan;
+brendan = 'super cool';
+
 console.log(brendan);
 
 
@@ -75,15 +76,15 @@ function eat(){
 
 //How the Interpreter see it
 var food;
-food = 'chicken';
-console.log(food);
-eat();
 function eat(){
-    var food;
     food = 'half-chicken';
     console.log(food);
     food = 'gone';
 }
+food = 'chicken';
+console.log(food);
+eat();
+
 
 
 
@@ -107,10 +108,9 @@ var mean;
 mean();
 console.log(food);
 mean = function() {
-    var food;
     food = "chicken";
     console.log(food);
-    food = "fish";
+    var food = "fish";
     console.log(food);
 }
 console.log(food);
